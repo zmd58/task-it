@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="66c1b2c8-351a-4e48-9f32-d3e3791d9314" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/taskit/backend/controller/TaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/taskit/backend/dao/TaskDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/taskit/backend/dao/TaskJdbcDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/src/main/java/com/taskit/backend/model/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/ConsoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/TaskService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utility/BasicLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utility/BasicLoggerException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/frontend-task-it/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/frontend-task-it/model/Task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/frontend-task-it/service/ConsoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/frontend-task-it/service/TaskService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/frontend-task-it/utility/BasicLogger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/frontend-task-it/utility/BasicLoggerException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/taskit/server/ServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/taskit/server/controller/TaskController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/taskit/server/dao/TaskDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/taskit/server/dao/TaskJdbcDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/java/com/taskit/server/model/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/test/java/com/taskit/server/ServerApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2NWkC6sMGJtr2FE5H8pqHMvs0bT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "SDK Location",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "android.project.structure"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="66c1b2c8-351a-4e48-9f32-d3e3791d9314" name="Changes" comment="" />
+      <created>1679787096697</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679787096697</updated>
+    </task>
+    <servers />
+  </component>
+</project>
