@@ -2,7 +2,7 @@ package com.taskit.backend.model;
 
 import org.springframework.lang.NonNull;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 public class Task {
     private int id;
@@ -10,17 +10,18 @@ public class Task {
     private String title;
     @NonNull
     private String note;
-    private LocalDateTime dateTime = LocalDateTime.now();
+
+    private LocalDate date = LocalDate.now();
     private Boolean status;
 
 
     public Task() {}
 
-    public Task(int id, String title, String note, LocalDateTime dateTime) {
+    public Task(int id, String title, String note, LocalDate date) {
         this.id = id;
         this.title = title;
         this.note = note;
-        this.dateTime = dateTime;
+        this.date = date;
         this.status = false;
     }
 
@@ -49,12 +50,12 @@ public class Task {
         this.note = note;
     }
 
-    public LocalDateTime getDateTime() {
-        return dateTime;
+    public LocalDate getDate() {
+        return date;
     }
 
-    public void setDateTime(LocalDateTime dateTime) {
-        this.dateTime = dateTime;
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 
     public Boolean getStatus() {
