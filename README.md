@@ -66,3 +66,4 @@ To exit the application, run the following command:
 ### Project Ownership
 
 This project was designed and implemented by Zoe Dang and Jacqueline Rhea.
+
