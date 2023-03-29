@@ -17,13 +17,13 @@ CREATE SEQUENCE seq_task_id
   START WITH 1
   NO MAXVALUE;
 
-INSERT INTO tasks (title, note, date, status)
+INSERT INTO tasks (title, note, date_due, status)
 VALUES ('pick up', 'apple, orange, banana', '03-28-2023', false);
 
-INSERT INTO tasks (title, note, date, status)
-VALUES ('groom', 'groom tha doggie', '03-28-2023', false);
+INSERT INTO tasks (title, note, date_due, status)
+VALUES ('groom', 'groom tha doggie', '03-29-2023', false);
 
-INSERT INTO tasks (title, note, date, status)
-VALUES ('pay', 'pay zoe rent', '03-28-2023', false);
+INSERT INTO tasks (title, note, date_due, status)
+VALUES ('pay', 'pay zoe rent', '03-30-2023', false);
 
 COMMIT;
