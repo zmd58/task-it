@@ -18,10 +18,9 @@ public class TaskJdbcDao implements TaskDao {
 
     @Override
     public List<Task> findAllTasks() {
-        //need to add try/catch
+        //need a try/catch
         List<Task> tasks = new ArrayList<>();
         String sql = "SELECT title, note, date, status FROM tasks;";
-
         SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
         while (results.next()) {
             tasks.add(mapRowToTask(results));
@@ -31,7 +30,6 @@ public class TaskJdbcDao implements TaskDao {
 
     @Override
     public Task createTask(Task task) {
-        //would we need to create status or have it default to not_completed?
         //need to add try/catch
         String sql = "INSERT INTO tasks (title, note, date, status) VALUES (?, ?, ?, ?):";
         int taskId = jdbcTemplate.queryForObject(sql, int.class, task.getTitle(), task.getNote(), task.getDate(), task.getStatus());
