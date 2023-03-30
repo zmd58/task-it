@@ -7,16 +7,25 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="backend" />
+        <module name="frontend" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="backend" target="17" />
+      <module name="backend (1)" target="17" />
+      <module name="backend (2)" target="17" />
+      <module name="frontend" target="17" />
+      <module name="m02-capstone-client" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_STRING" value="--add-exports java.base/sun/nio.ch.FileChannelImpl=All-UNNAMED" />
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="backend" options="-parameters" />
+      <module name="backend (1)" options="-parameters" />
+      <module name="backend (2)" options="-parameters" />
+      <module name="frontend" options="" />
+      <module name="m02-capstone-client" options="" />
     </option>
   </component>
 </project>

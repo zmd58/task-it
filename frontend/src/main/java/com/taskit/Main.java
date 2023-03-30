@@ -1,5 +1,7 @@
+package com.taskit;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Frontend!");
+        System.out.println("Hello world!");
     }
 }
