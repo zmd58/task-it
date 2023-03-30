@@ -45,7 +45,7 @@ public class TaskJdbcDao implements TaskDao {
     @Override
     public Task createTask(Task task) {
         //need to add try/catch
-        String sql = "INSERT INTO tasks (title, note, date_due, task_status) VALUES (?, ?, ?, ?);";
+        String sql = "INSERT INTO tasks (title, note, date_due, task_status) VALUES (?, ?, ?, ?) RETURNING task_id;";
         int taskId = jdbcTemplate.queryForObject(sql, int.class, task.getTitle(), task.getNote(), task.getDate(), task.getStatus());
         task.setId(taskId);
         return task;
@@ -54,7 +54,7 @@ public class TaskJdbcDao implements TaskDao {
     @Override
     public boolean updateTask(int Id, Task task) {
         String sql = "UPDATE tasks " +
-                    "SET title = ?, note = ?, date_due = ?, task_status = ?" +
+                    "SET title = ?, note = ?, date_due = ?, task_status = ? " +
                     "WHERE task_id = ?;";
         int numberOfRow = jdbcTemplate.update(sql, task.getTitle(), task.getNote()
                 , task.getDate(), task.getStatus(), Id);
