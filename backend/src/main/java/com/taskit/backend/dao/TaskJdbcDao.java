@@ -33,7 +33,7 @@ public class TaskJdbcDao implements TaskDao {
     public List<Task> findAllTasks() {
         //need a try/catch
         List<Task> tasks = new ArrayList<>();
-        String sql = "SELECT title, note, date, status FROM tasks;";
+        String sql = "SELECT task_id, title, note, date_due, task_status FROM tasks;";
 
         SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
         while (results.next()) {
