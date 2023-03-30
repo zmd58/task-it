@@ -11,10 +11,10 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="backend" target="11" />
+      <module name="backend" target="17" />
       <module name="backend (1)" target="17" />
       <module name="backend (2)" target="17" />
-      <module name="frontend" target="11" />
+      <module name="frontend" target="17" />
       <module name="m02-capstone-client" target="11" />
     </bytecodeTargetLevel>
   </component>
