@@ -12,7 +12,7 @@ public class BasicLogger {
     private static PrintWriter pw = null;
     private static final String DIRECTORY_NAME = "frontend";
 
-    public static void log(String message) throws BasicLoggerException {
+    public static void log(String message) {
         try {
             if (pw == null) {
                 String userDir = System.getProperty("user.dir");
@@ -28,7 +28,11 @@ public class BasicLogger {
             pw.flush();
         }
         catch (FileNotFoundException e) {
-            throw new BasicLoggerException(e.getMessage());
+            try {
+                throw new BasicLoggerException(e.getMessage());
+            } catch (BasicLoggerException ex) {
+                throw new RuntimeException(ex);
+            }
         }
     }
 }

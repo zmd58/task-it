@@ -5,9 +5,9 @@ import com.taskit.service.TaskService;
 
 public class Main {
 
-    private static final String API_BASE_URL = "http://localhost:8080/";
+    private static final String API_BASE_URL = "http://localhost:8080/taskit/";
 
-    private TaskService taskService = new TaskService();
+    private TaskService taskService = new TaskService(API_BASE_URL);
     private ConsoleService consoleService = new ConsoleService();
 
     public static void main(String[] args) {
