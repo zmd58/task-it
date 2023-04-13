@@ -30,7 +30,7 @@ public class TaskJdbcDao implements TaskDao {
     }
 
     @Override
-    public List<Task> findAllTasks() {
+    public Task[] findAllTasks() {
         //need a try/catch
         List<Task> tasks = new ArrayList<>();
         String sql = "SELECT task_id, title, note, date_due, task_status FROM tasks;";
@@ -39,7 +39,9 @@ public class TaskJdbcDao implements TaskDao {
         while (results.next()) {
             tasks.add(mapRowToTask(results));
         }
-        return tasks;
+
+        int size = tasks.size();
+        return tasks.toArray(new Task[size]);
     }
 
     @Override

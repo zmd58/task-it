@@ -18,7 +18,7 @@ public class TaskController {
     }
 
     @GetMapping(path = "/tasks")
-    public List<Task> getAllTasks() {
+    public Task[] getAllTasks() {
         //need to add try/catch
         return taskDao.findAllTasks();
     }

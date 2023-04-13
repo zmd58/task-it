@@ -86,4 +86,10 @@ public class TaskService {
         headers.setContentType(MediaType.APPLICATION_JSON);
         return new HttpEntity<>(task, headers);
     }
+
+    private HttpEntity<Void> makeAuthEntity() {
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+        return new HttpEntity<>(headers);
+    }
 }
