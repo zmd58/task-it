@@ -1,8 +1,5 @@
 package com.taskit.model;
 
-
-import org.springframework.lang.NonNull;
-
 import java.time.LocalDate;
 
 public class Task {
@@ -23,6 +20,13 @@ public class Task {
         this.status = false;
     }
 
+    public Task(int id, String title, String note, LocalDate date, Boolean status) {
+        this.id = id;
+        this.title = title;
+        this.note = note;
+        this.date = date;
+        this.status = status;
+    }
 
     public int getId() {
         return id;

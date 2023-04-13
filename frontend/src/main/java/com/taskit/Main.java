@@ -1,5 +1,6 @@
 package com.taskit;
 
+import com.taskit.model.Task;
 import com.taskit.service.ConsoleService;
 import com.taskit.service.TaskService;
 
@@ -21,16 +22,16 @@ public class Main {
     }
 
     private void mainMenu() {
-        int menuSelection = -1;
-        while (menuSelection != 0) {
+        while (true) {
             consoleService.printMainMenu();
-            menuSelection = consoleService.promptForMenuSelection("Please choose an option: ");
+            int menuSelection = consoleService.promptForMenuSelection("Please choose an option: ");
             if (menuSelection == 1) {
                 //View Your Task List
+                test();
             } else if (menuSelection == 2) {
                 taskMenu();
             } else if (menuSelection == 0) {
-                break;
+                System.exit(0);
             } else {
                 System.out.println("Invalid Selection");
             }
@@ -39,10 +40,9 @@ public class Main {
     }
 
     private void taskMenu() {
-        int menuSelection = -1;
-        while (menuSelection != 0) {
+        while (true) {
             consoleService.printTaskMenu();
-            menuSelection = consoleService.promptForMenuSelection("Please choose an option: ");
+            int menuSelection = consoleService.promptForMenuSelection("Please choose an option: ");
             if (menuSelection == 1) {
                 //Create new task
             } else if (menuSelection == 2) {
@@ -50,7 +50,7 @@ public class Main {
             } else if (menuSelection == 3) {
                 mainMenu();
             } else if (menuSelection == 0) {
-                break;
+                System.exit(0);
             } else {
                 System.out.println("Invalid Selection");
             }
@@ -59,10 +59,9 @@ public class Main {
     }
 
     private void editMenu() {
-        int menuSelection = -1;
-        while (menuSelection != 0) {
+        while (true) {
             consoleService.printEditMenu();
-            menuSelection = consoleService.promptForMenuSelection("Please choose an option: ");
+            int menuSelection = consoleService.promptForMenuSelection("Please choose an option: ");
             if (menuSelection == 1) {
                 //edit title
             } else if (menuSelection == 2) {
@@ -78,7 +77,7 @@ public class Main {
             } else if (menuSelection == 7) {
                 mainMenu();
             } else if (menuSelection == 0) {
-                break;
+                System.exit(0);
             } else {
                 System.out.println("Invalid Selection");
             }
@@ -86,5 +85,17 @@ public class Main {
         }
     }
 
+    public void test() {
+        Task[] tasks = taskService.getAllTasks();
+
+        if (tasks == null) {
+            System.out.println("No task found");
+            return;
+        }
+
+        for (Task task : tasks) {
+            System.out.println(task.getId());
+        }
+    }
 
 }

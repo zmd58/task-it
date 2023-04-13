@@ -25,6 +25,13 @@ public class Task {
         this.status = false;
     }
 
+    public Task(int id, @NonNull String title, @NonNull String note, LocalDate date, Boolean status) {
+        this.id = id;
+        this.title = title;
+        this.note = note;
+        this.date = date;
+        this.status = status;
+    }
 
     public int getId() {
         return id;
